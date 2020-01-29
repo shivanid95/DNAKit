@@ -52,9 +52,6 @@ padding: 10px;
 A UI component library written in swift, inspired by [Atomic Design by Brad Frost](http://atomicdesign.bradfrost.com/table-of-contents/). A repository of reusable, customizable and stateful UI components and interactions for building modular and flexible UI elements in swift.  
 
 
-
-To know more about design systems and component library checkout [blog](https://medium.com)
-
 #### Benefits:
 * Reusablitiy of code 
 * Promotes modularity, hence reducing redundancy
@@ -132,12 +129,12 @@ To know more about design systems and component library checkout [blog](https://
     * #### Initialization
          can be initialized by either providing a string literal or an interpolated String
          
-         ```swift
+         ````swift
           public init(stringLiteral: String)
           
          ```
 
-        ```swift
+        ````swift
         public init(stringInterpolation: StringInterpolation)
         ```  
     
@@ -203,7 +200,7 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
                 Image icon for the button (optional)
       
             * **buttonHeight** : `DNAButtonHeight`
-            For consistency purpose the height of the button is standardized. You can provide custom height by using `DNAButtonHeight.custom(<desiredHeight: Int>)`
+                 For consistency purpose the height of the button is standardized. You can provide custom height by using                       `DNAButtonHeight.custom(<desiredHeight: Int>)`
     
                 | type                 | height              |  font size    | 
                 | :--------------: |:-----------------:|:-----------------:|
@@ -216,8 +213,8 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
        
         
             * **action** :  `(DNABaseButton) -> Void`
-            All tap events recieved by the button can be handled by `action` variable.
-            It is a closure which can be implemented (optionally), and gets triggered whenever user
+                All tap events recieved by the button can be handled by `action` variable.
+                It is a closure which can be implemented (optionally), and gets triggered whenever user
   
     
 
@@ -237,8 +234,8 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
         
         ` let headerLabel = DNALabel(withType: .h1(.product), text: "Hello World")`
         
-        * #### Initialization
-           DNALabel can be initialized with a specific [Typography]( link://typography) 
+            * #### Initialization
+                DNALabel can be initialized with a specific [Typography]( link://typography) 
             
             ```swift
         
@@ -281,20 +278,21 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
         Number type defines what kind of value the number is for eg. A number can be a percentage or an amount
         
         
-        * #### Initialization
-            Initialized with a number type which determines how to process the number value
+     * #### Initialization
+       
+       Initialized with a number type which determines how to process the number value
         
             ```swift
 
             public init(withNumberType numType: DNANumberType)
             ```
         
-        * #### Properties
+      * #### Properties
         
-        * **value** :  `Double`
+       * **value** :  `Double`
             number value to be displayed
-            
-        * **numberType** : ` DNANumberType`
+           
+       * **numberType** : ` DNANumberType`
            
            the number value can be of one of the following types.
            The numbers can be signed, that is showing + / - signs for respective values
@@ -357,7 +355,7 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
     1. #### DNATextField
         A  stateful textfield with rule based validation. 
         
-        * #### Validation 
+      * #### Validation 
             The text field input can be validated by adding validation rules. 
             A validation rule describes what type of input to accept.
     
@@ -491,13 +489,13 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
     > The process of adding validations to a text view is similar to that in DNATextField
     
     * #### Properties 
-        * **typography** :  `Typography`
-        * **placeholderText** : `String`
-        * **inputState** :  `DNATextInputState`
-        * **borderColor** :  `UIColor`
-        * **validationRules** : `[TextValidationRuleType]`
-        * **validationDelegate** :  `DNATextInputDelegate?`
-        * **error** : `ValidationError?`
+     * **typography** :  `Typography`
+     * **placeholderText** : `String`
+     * **inputState** :  `DNATextInputState
+     * **borderColor** :  `UIColor`
+     * **validationRules** : `[TextValidationRuleType]`
+     * **validationDelegate** :  `DNATextInputDelegate?`
+     * **error** : `ValidationError?`
     
 
 ## Molecules
