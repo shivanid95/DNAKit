@@ -1,36 +1,37 @@
+<html>
 <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
 <div align = "center", class = "container">
-<style>
+ <style>
     .container {
         width: 100%;
         margin: 0 auto;
-        flex-direction: space-around;
         display: flex;
         flex: 1;
-         justify-content: center;
-         align-items: center;
+        justify-content: center;
+        align-items: center;
     }
     .text {
-    padding-left: 16px;
-    padding-top: 15px;
-    font-size: 80px;
-    font-family: 'Arvo', serif;
+        padding-left: 16px;
+        padding-top: 15px;
+        font-size: 80px;
+        font-family: 'Arvo', serif;
     }
     .infoContainer {
-    display: flex;
-    width: 100%;
-    flex: 1;
-    align-items: center;
-    spacing: 10px;
-    justify-content: center;
-    flex-direction: center;
-    padding: 32px;
- 
-}
-.box {
-padding: 10px;
-}
+        display: flex;
+        width: 100%;
+        flex: 1;
+        align-items: center;
+        spacing: 10px;
+        justify-content: center;
+        padding: 32px;
+
+   }
+   .box {
+        padding: 10px;
+   }
 </style>
+
 <img src="https://drive.google.com/uc?export=download&id=1JUYIpaQfKW4Wk0AF2MfP2ymh2REEYS5o" width="150" height="150" />
 <p class="text"> DNAKit </p>
 </div>
@@ -43,7 +44,7 @@ padding: 10px;
 <img class="box" src="https://img.shields.io/badge/licence-MIT-lightgray.svg" alt="Licence MIT"/>
 </a>
 </p>
-
+</html>
 
 
 
@@ -123,20 +124,20 @@ A UI component library written in swift, inspired by [Atomic Design by Brad Fros
 3.  ### DNAAttributedString
    
    * Custom Attributed string supporting utility based functionalities for reducing redundancy and easing development process.
-    * Supports String Interpolation  for custom styles like typography, font, images, links , colors etc,
-    * String interpolation makes it very easy to define  and modify custom attributes of a string dynamically
+   * Supports String Interpolation  for custom styles like typography, font, images, links , colors etc,
+   * String interpolation makes it very easy to define  and modify custom attributes of a string dynamically
     
-    * #### Initialization
-         can be initialized by either providing a string literal or an interpolated String
+   * #### Initialization
+      can be initialized by either providing a string literal or an interpolated String
          
-         ````swift
+       ```swift
           public init(stringLiteral: String)
           
-         ```
+       ```
 
-        ````swift
+       ```swift
         public init(stringInterpolation: StringInterpolation)
-        ```  
+       ```  
     
 
 
