@@ -1,4 +1,4 @@
-<img src="https://drive.google.com/uc?export=download&id=12AOJSQgMImR20DA8tx7KOf_Y-BUPaNsV"/>
+<img src="Assets/NamedLogo.png"/>
 <p style="display: flex;
         width: 100%;
         flex: 1;
@@ -7,11 +7,11 @@
         justify-content: center;
         padding: 32px;
 ">
-<img class="box" src="https://img.shields.io/badge/Swift-5.0-orange.svg" alt="Swift 5.0"/>
-<img class="box"  src="https://img.shields.io/badge/platform-iOS-brightgreen.svg" alt="Platform: iOS"/>
-<img class="box" src="https://img.shields.io/badge/Xcode-11%2B-brightgreen.svg" alt="XCode 11+"/>
-<img class="box" src="https://img.shields.io/badge/iOS-11%2B-brightgreen.svg" alt="iOS 11+"/>
-<img class="box" src="https://img.shields.io/badge/licence-MIT-lightgray.svg" alt="Licence MIT"/>
+<img  src="https://img.shields.io/badge/Swift-5.0-orange.svg" alt="Swift 5.0"/>
+<img  src="https://img.shields.io/badge/platform-iOS-brightgreen.svg" alt="Platform: iOS"/>
+<img  src="https://img.shields.io/badge/Xcode-11%2B-brightgreen.svg" alt="XCode 11+"/>
+<img  src="https://img.shields.io/badge/iOS-11%2B-brightgreen.svg" alt="iOS 11+"/>
+<img  src="https://img.shields.io/badge/licence-MIT-lightgray.svg" alt="Licence MIT"/>
 </p>
 
 
@@ -35,6 +35,21 @@ A UI component library written in swift, inspired by [Atomic Design by Brad Fros
 ## Carthage
 
 ## Cocoapods
+
+To install via cocoapods add `pod 'DNAKit', '~> 0.0.1' `similar to the following to your Podfile:
+
+  ```
+target 'MyApp' do
+pod 'DNAKit', '~> 0.0.1'
+end
+```
+
+Then run a pod install inside your terminal, or from CocoaPods.app.
+
+Alternatively to give it a test run, run the command:
+
+ `pod try DNAKit`
+
 
 ## Manual
 
