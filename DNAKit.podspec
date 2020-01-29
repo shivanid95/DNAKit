@@ -89,6 +89,8 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/shivanid95/DNAKit.git", :branch => 'master' }
   spec.platforms = { :ios => "11.0"}
+  spec.swift_version = '4.2'
+  spec.ios.deployment_target  = '11.0'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -104,6 +106,8 @@ Pod::Spec.new do |spec|
   # spec.public_header_files = "Classes/**/*.h"
 
   spec.ios.vendored_frameworks = 'DNAKit.framework'
+
+
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
