@@ -113,7 +113,7 @@
 		3621118C23D5DB4F00E5AF91 /* DNATooltip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNATooltip.swift; sourceTree = "<group>"; };
 		36F204D023CC7C890068C3E2 /* DNAKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DNAKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F204D323CC7C890068C3E2 /* DNAKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNAKit.h; path = ../DNAKit.h; sourceTree = "<group>"; };
-		36F204D423CC7C890068C3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		36F204D423CC7C890068C3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36F204E223CC7DA20068C3E2 /* DNABaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNABaseButton.swift; sourceTree = "<group>"; };
 		36F204E623CC7E280068C3E2 /* DNAButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNAButtonState.swift; sourceTree = "<group>"; };
 		36F204E823CC7E620068C3E2 /* DNAButtonHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNAButtonHeight.swift; sourceTree = "<group>"; };
@@ -254,6 +254,7 @@
 		36F204D223CC7C890068C3E2 /* DNAKit */ = {
 			isa = PBXGroup;
 			children = (
+				36F204D423CC7C890068C3E2 /* Info.plist */,
 				3621117F23D5D80B00E5AF91 /* Error */,
 				36F204DB23CC7CB70068C3E2 /* Atoms */,
 				36F204E523CC7E0A0068C3E2 /* Enums */,
@@ -308,7 +309,6 @@
 			isa = PBXGroup;
 			children = (
 				36F204D323CC7C890068C3E2 /* DNAKit.h */,
-				36F204D423CC7C890068C3E2 /* Info.plist */,
 				36F204F423CC9CE60068C3E2 /* AnchoredConstraints.swift */,
 				36F204F823CCC1AC0068C3E2 /* ExtensibleByAssociatedObjects.swift */,
 			);
@@ -694,7 +694,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DNAKit/Helpers/Info.plist;
+				INFOPLIST_FILE = DNAKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -721,7 +721,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DNAKit/Helpers/Info.plist;
+				INFOPLIST_FILE = DNAKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
