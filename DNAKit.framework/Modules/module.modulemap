@@ -1,0 +1,11 @@
+framework module DNAKit {
+  umbrella header "DNAKit.h"
+
+  export *
+  module * { export * }
+}
+
+module DNAKit.Swift {
+    header "DNAKit-Swift.h"
+    requires objc
+}
