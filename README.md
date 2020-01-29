@@ -1,17 +1,4 @@
-<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
-<div align = "center", style = "width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: center;">
-<img src="https://drive.google.com/uc?export=download&id=1JUYIpaQfKW4Wk0AF2MfP2ymh2REEYS5o" width="150" height="150"/>
-<p style="padding-left: 16px;
-        padding-top: 15px;
-        font-size: 80px;
-        font-family: 'Arvo', serif;"> DNAKit </p>
-</div>
-
+<img src="https://drive.google.com/uc?export=download&id=12AOJSQgMImR20DA8tx7KOf_Y-BUPaNsV"/>
 <p style="display: flex;
         width: 100%;
         flex: 1;
@@ -26,6 +13,7 @@
 <img class="box" src="https://img.shields.io/badge/iOS-11%2B-brightgreen.svg" alt="iOS 11+"/>
 <img class="box" src="https://img.shields.io/badge/licence-MIT-lightgray.svg" alt="Licence MIT"/>
 </p>
+
 
 
 
@@ -216,10 +204,10 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
         
         ` let headerLabel = DNALabel(withType: .h1(.product), text: "Hello World")`
         
-            * #### Initialization
-                DNALabel can be initialized with a specific [Typography]( link://typography) 
+     * #### Initialization
+        DNALabel can be initialized with a specific [Typography]( link://typography) 
             
-            ```swift
+         ```swift
         
                 /**
                 Initialize a DNALabel
@@ -227,31 +215,31 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
                 - parameter text: text string for the label
                 */
                 init(withType type: Typography, text: String?)
-             ```
+          ```
         
-            ```swift
+         ```swift
                 /**
                 Initialize text without typography
                 */
                 init() 
                 
-            ```
+          ```
         
-        * #### Propert ies
+     * #### Properties
          
-            * **textColor**: `UIColor` 
-                tint color of the text
+      * **textColor**: `UIColor` 
+        tint color of the text
                 
-            * **customAttributedText** : `DNAAttributedString`
-            * **type**: `Typography`
+      * **customAttributedText** : `DNAAttributedString
+      * **type**: `Typography`
             
-        * #### Supporting User Interactions
-        To add and handle user tap events, implement the following method.
-           
-           ```swift
-            typealias Action = (DNALabel) -> Void
-            public func action(_ closure: @escaping Action)
-            ```
+   * #### Supporting User Interactions
+      To add and handle user tap events, implement the following method.
+        
+    ```swift
+    typealias Action = (DNALabel) -> Void
+    public func action(_ closure: @escaping Action)
+    ```
             
     * ### DNANumericLabel
         A subclass of `DNALabel` for handling and processing special types of numeric values; these include amount, percentages, differences and signed numbers
@@ -271,20 +259,20 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
         
       * #### Properties
         
-       * **value** :  `Double`
+     * **value** :  `Double`
             number value to be displayed
            
-       * **numberType** : ` DNANumberType`
+     * **numberType** : ` DNANumberType`
            
-           the number value can be of one of the following types.
-           The numbers can be signed, that is showing + / - signs for respective values
+        the number value can be of one of the following types.
+        The numbers can be signed, that is showing + / - signs for respective values
             
-            > To have different colors for positive and negitive values provide
-            `Color.colored` value for color variable
+        > To have different colors for positive and negitive values provide
+        `Color.colored` value for color variable
 
            
-            ```swift
-             public enum DNANumberType {
+         ```swift
+            public enum DNANumberType {
              /**
               Percentage: Appends % sign at the end of the value
              - color: option to show positive / negetive values in different colors
@@ -329,7 +317,7 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
                     
                 }
              
-            ```
+          ```
 
 
 3. ### Text Inputs
@@ -342,14 +330,14 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
             A validation rule describes what type of input to accept.
     
             
-            Each [rule type](link://textValidationRuleType) has a [TextValidationRule](link://validation) and  an error object associated with it . If the rules provided are evaluated are not satisfied, the textField's input state enters errored state, and associated error message is displayed.
+           Each [rule type](link://textValidationRuleType) has a [TextValidationRule](link://validation) and  an error object associated with it . If the rules provided are evaluated are not satisfied, the textField's input state enters errored state, and associated error message is displayed.
             
             
-            You can provided multiple rules, if there are confilcting rules conditions, then precedence will be given on the basis of  whichever rule is added first in the array.
+           You can provided multiple rules, if there are confilcting rules conditions, then precedence will be given on the basis of  whichever rule is added first in the array.
             
-            **TextValidationRule**
+           **TextValidationRule**
            
-           ```
+          ```
             public enum TextValidationRule {
                 
                 case noRestriction
@@ -386,26 +374,21 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
                 
             }
             
-            ```   
+          ```   
     
-        * #### Properties 
-        
-            DNATextfield is a subclass of `UITextField` , hence all the properties of UITextField are applicable, along with some extra properties. 
+      * #### Properties 
+      
+          DNATextfield is a subclass of `UITextField` , hence all the properties of UITextField are applicable, along with some extra properties. 
             * **borderColor** : `UIColor`
                 border color for the text feild
-                
-                * **typography**: `Typography`
+             * **typography**: `Typography`
                     to add custom attributes to the text 
-                
-            * **inputState** :  `DNATextInputState`
-                
-                * *normal* : When no text is inputed
-                * *disabled*  :  Input will be in de-activated state
-                * *error* :  If input is incorrect (based on rules provided)
-                * *focused*  : While the text is being entered, the text feild is in foceused state.
-                
-                
-            * **validationRules** : `TextValidationRuleType`
+             * **inputState** :  `DNATextInputState`
+             * **normal** : When no text is inputed
+             * **disabled**  :  Input will be in de-activated state
+             * **error** :  If input is incorrect (based on rules provided)
+             * **focused**  : While the text is being entered, the text feild is in foceused state.
+             * **validationRules** : `TextValidationRuleType`
                 Input text can be validated by adding text validation rule type.
                 TextValidationRuleType has a [rule]() and an error object associated with it.
             
@@ -429,7 +412,7 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
                 
                  ```` 
                 
-            * **validationDelegate** : `DNATextInputDelegate`
+    * **validationDelegate** : `DNATextInputDelegate`
             
                 To be notified about the status of input text validation, conform to the validationDelegate.
             
@@ -442,7 +425,7 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
                 ```` 
             
             
-            *  **error**: `ValidationError`
+     *  **error**: `ValidationError`
             
                  Possible error states for text input
                  
