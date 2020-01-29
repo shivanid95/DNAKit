@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DNAKit"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A repository of reusable, customizable and stateful UI components and interactions for building modular and flexible UI elements in swift."
 
   # This description is used to generate tags and improve search results.
@@ -87,8 +87,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/shivanid95/DNAKit.git", :branch => 'master', :tag => "v0.0.1-beta" }
-
+  spec.source       = { :git => "https://github.com/shivanid95/DNAKit.git", :branch => 'master' }
+  spec.platforms = { :ios => "11.0"}
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -103,7 +103,7 @@ Pod::Spec.new do |spec|
 
   # spec.public_header_files = "Classes/**/*.h"
 
-  spec.ios.vendored_frameworks = 'DNAKit/DNAKit.framework'
+  spec.ios.vendored_frameworks = 'DNAKit.framework'
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -114,8 +114,8 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # spec.resource  = "icon.png"
-  spec.ios.resources = "DNAKit/Atoms/Image/**/*.png"
+  spec.resources  = "DNAKit/Atoms/Image/*.xcassets"
+  spec.resource_bundles = {'DNAKit' => "DNAKit/Atoms/Image/**/*.{imageset}" }
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
