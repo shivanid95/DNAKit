@@ -98,10 +98,12 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  =  "DNAKit/DNAKit/**/*"
+  spec.source_files  =  "DNAKit/**/*"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
+
+  spec.ios.vendored_frameworks = 'DNAKit/DNAKit.framework'
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -113,7 +115,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
+  spec.ios.resources = "DNAKit/Atoms/Image/**/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

@@ -73,7 +73,7 @@
 		36F6924923D9866A0046353E /* DNAShadowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F6924823D9866A0046353E /* DNAShadowType.swift */; };
 		36F6924B23D986FB0046353E /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F6924A23D986FB0046353E /* CALayer+Extension.swift */; };
 		36F6E24023DEEFA600F1C75C /* DNATextInputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F6E23F23DEEFA600F1C75C /* DNATextInputState.swift */; };
-		36F6E24623E0455300F1C75C /* Images.xcassets 15-36-43-919.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F6E24523E0455300F1C75C /* Images.xcassets 15-36-43-919.xcassets */; };
+		36F6E24623E0455300F1C75C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F6E24523E0455300F1C75C /* Images.xcassets */; };
 		36F6E24823E0525700F1C75C /* DNAImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F6E24723E0525700F1C75C /* DNAImageView.swift */; };
 		36F6E25723E1F64E00F1C75C /* NamedLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 36F6E25623E1F64E00F1C75C /* NamedLogo.png */; };
 /* End PBXBuildFile section */
@@ -133,7 +133,7 @@
 		36F6924823D9866A0046353E /* DNAShadowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNAShadowType.swift; sourceTree = "<group>"; };
 		36F6924A23D986FB0046353E /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
 		36F6E23F23DEEFA600F1C75C /* DNATextInputState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNATextInputState.swift; sourceTree = "<group>"; };
-		36F6E24523E0455300F1C75C /* Images.xcassets 15-36-43-919.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images.xcassets 15-36-43-919.xcassets"; sourceTree = "<group>"; };
+		36F6E24523E0455300F1C75C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		36F6E24723E0525700F1C75C /* DNAImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNAImageView.swift; sourceTree = "<group>"; };
 		36F6E25623E1F64E00F1C75C /* NamedLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NamedLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,7 +206,7 @@
 		3621116923D5C7ED00E5AF91 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				36F6E24523E0455300F1C75C /* Images.xcassets 15-36-43-919.xcassets */,
+				36F6E24523E0455300F1C75C /* Images.xcassets */,
 				36F6E24723E0525700F1C75C /* DNAImageView.swift */,
 			);
 			path = Image;
@@ -455,7 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36F6923223D830D50046353E /* DNAKit.png in Resources */,
-				36F6E24623E0455300F1C75C /* Images.xcassets 15-36-43-919.xcassets in Resources */,
+				36F6E24623E0455300F1C75C /* Images.xcassets in Resources */,
 				36F6E25723E1F64E00F1C75C /* NamedLogo.png in Resources */,
 				361CEFF923D73B1A006C9BE0 /* README.md in Resources */,
 			);
@@ -704,7 +704,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.designSystem.dnakit.DNAKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -731,7 +731,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.designSystem.dnakit.DNAKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
