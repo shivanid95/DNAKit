@@ -1,36 +1,25 @@
 <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
-<div align = "center", class = "container">
-<style>
-   .container {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    }
-   .text {
-    padding-left: 16px;
-    padding-top: 15px;
-    font-size: 80px;
-    font-family: 'Arvo', serif;
-    }
-   .infoContainer {
-    display: flex;
-    width: 100%;
-    flex: 1;
-    align-items: center;
-    padding: 32px;
-    }
-   .box {
-    padding: 10px;
-    }
-</style>
+<div align = "center", style = "width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;">
 <img src="https://drive.google.com/uc?export=download&id=1JUYIpaQfKW4Wk0AF2MfP2ymh2REEYS5o" width="150" height="150"/>
-<p class="text"> DNAKit </p>
+<p style="padding-left: 16px;
+        padding-top: 15px;
+        font-size: 80px;
+        font-family: 'Arvo', serif;"> DNAKit </p>
 </div>
 
-<p class="infoContainer">
+<p style="display: flex;
+        width: 100%;
+        flex: 1;
+        align-items: center;
+        spacing: 10px;
+        justify-content: center;
+        padding: 32px;
+">
 <img class="box" src="https://img.shields.io/badge/Swift-5.0-orange.svg" alt="Swift 5.0"/>
 <img class="box"  src="https://img.shields.io/badge/platform-iOS-brightgreen.svg" alt="Platform: iOS"/>
 <img class="box" src="https://img.shields.io/badge/Xcode-11%2B-brightgreen.svg" alt="XCode 11+"/>
