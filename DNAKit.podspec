@@ -114,8 +114,8 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  spec.resources  = "DNAKit/Atoms/Image/*.xcassets"
-  spec.resource_bundles = {'DNAKit' => "DNAKit/Atoms/Image/**/*.{imageset}" }
+  #spec.resources  = "DNAKit/Atoms/Image/*.xcassets"
+  # spec.resource_bundles = {'DNAKit' => "DNAKit/Atoms/Image/**/*.{imageset}" }
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
