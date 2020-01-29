@@ -1,47 +1,17 @@
-<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
-<div align = "center", class = "container">
-<style>
-    .container {
+<img src="Assets/NamedLogo.png"/>
+<p style="display: flex;
         width: 100%;
-        margin: 0 auto;
-        flex-direction: space-around;
-        display: flex;
         flex: 1;
-         justify-content: center;
-         align-items: center;
-    }
-    .text {
-    padding-left: 16px;
-    padding-top: 15px;
-    font-size: 80px;
-    font-family: 'Arvo', serif;
-    }
-    .infoContainer {
-    display: flex;
-    width: 100%;
-    flex: 1;
-    align-items: center;
-    spacing: 10px;
-    justify-content: center;
-    flex-direction: center;
-    padding: 32px;
- 
-}
-.box {
-padding: 10px;
-}
-</style>
-<img src="https://drive.google.com/uc?export=download&id=1JUYIpaQfKW4Wk0AF2MfP2ymh2REEYS5o" width="150" height="150" />
-<p class="text"> DNAKit </p>
-</div>
-
-<p class="infoContainer">
-<img class="box" src="https://img.shields.io/badge/Swift-5.0-orange.svg" alt="Swift 5.0"/>
-<img class="box"  src="https://img.shields.io/badge/platform-iOS-brightgreen.svg" alt="Platform: iOS"/>
-<img class="box" src="https://img.shields.io/badge/Xcode-11%2B-brightgreen.svg" alt="XCode 11+"/>
-<img class="box" src="https://img.shields.io/badge/iOS-11%2B-brightgreen.svg" alt="iOS 11+"/>
-<img class="box" src="https://img.shields.io/badge/licence-MIT-lightgray.svg" alt="Licence MIT"/>
-</a>
+        align-items: center;
+        spacing: 10px;
+        justify-content: center;
+        padding: 32px;
+">
+<img  src="https://img.shields.io/badge/Swift-5.0-orange.svg" alt="Swift 5.0"/>
+<img  src="https://img.shields.io/badge/platform-iOS-brightgreen.svg" alt="Platform: iOS"/>
+<img  src="https://img.shields.io/badge/Xcode-11%2B-brightgreen.svg" alt="XCode 11+"/>
+<img  src="https://img.shields.io/badge/iOS-11%2B-brightgreen.svg" alt="iOS 11+"/>
+<img  src="https://img.shields.io/badge/licence-MIT-lightgray.svg" alt="Licence MIT"/>
 </p>
 
 
@@ -51,9 +21,6 @@ padding: 10px;
 
 A UI component library written in swift, inspired by [Atomic Design by Brad Frost](http://atomicdesign.bradfrost.com/table-of-contents/). A repository of reusable, customizable and stateful UI components and interactions for building modular and flexible UI elements in swift.  
 
-
-
-To know more about design systems and component library checkout [blog](https://medium.com)
 
 #### Benefits:
 * Reusablitiy of code 
@@ -69,18 +36,30 @@ To know more about design systems and component library checkout [blog](https://
 
 ## Cocoapods
 
+To install via cocoapods add `pod 'DNAKit', '~> 0.0.1' `similar to the following to your Podfile:
+
+  ```
+target 'MyApp' do
+pod 'DNAKit', '~> 0.0.1'
+end
+```
+
+Then run a pod install inside your terminal, or from CocoaPods.app.
+
+Alternatively to give it a test run, run the command:
+
+ `pod try DNAKit`
+
+
 ## Manual
 
 
 # Usage
+**How to use ?**
 
-Who Should Adopt:
-
--  Use As is or as a template to build a pattern library around your own design system.
--  If you are thinking of creating a component library for your project, or modularize your UI, this might be a good reference point.
-  
-  - Categorization has been done based on the atomic design principles, with atoms being the lowest level design elements
-
+* This library can be used as is or as a template to build a pattern library around your own design system.
+* If you are thinking of creating a component library for your project, or modularize your UI, this might be a good reference point.
+* Categorization has been done based on the atomic design principles, with atoms being the lowest level design elements, and pages are the complete UI screens
 
 
 
@@ -129,20 +108,20 @@ Who Should Adopt:
 3.  ### DNAAttributedString
    
    * Custom Attributed string supporting utility based functionalities for reducing redundancy and easing development process.
-    * Supports String Interpolation  for custom styles like typography, font, images, links , colors etc,
-    * String interpolation makes it very easy to define  and modify custom attributes of a string dynamically
+   * Supports String Interpolation  for custom styles like typography, font, images, links , colors etc,
+   * String interpolation makes it very easy to define  and modify custom attributes of a string dynamically
     
-    * #### Initialization
-         can be initialized by either providing a string literal or an interpolated String
+   * #### Initialization
+      can be initialized by either providing a string literal or an interpolated String
          
-         ```swift
+       ```swift
           public init(stringLiteral: String)
           
-         ```
+       ```
 
-        ```swift
+       ```swift
         public init(stringInterpolation: StringInterpolation)
-        ```  
+       ```  
     
 
 
@@ -206,7 +185,7 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
                 Image icon for the button (optional)
       
             * **buttonHeight** : `DNAButtonHeight`
-            For consistency purpose the height of the button is standardized. You can provide custom height by using `DNAButtonHeight.custom(<desiredHeight>)`
+                 For consistency purpose the height of the button is standardized. You can provide custom height by using                       `DNAButtonHeight.custom(<desiredHeight: Int>)`
     
                 | type                 | height              |  font size    | 
                 | :--------------: |:-----------------:|:-----------------:|
@@ -219,9 +198,9 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
        
         
             * **action** :  `(DNABaseButton) -> Void`
-    
-                A closure which can be implemented (optionally), and gets triggered whenever user
-                taps the button
+                All tap events recieved by the button can be handled by `action` variable.
+                It is a closure which can be implemented (optionally), and gets triggered whenever user
+  
     
 
 
@@ -234,12 +213,16 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
     Custom label classes which supports displaying text with predefined typography, processing numerical values, and adding user interaction
     
     * #### DNALabel
-        A highly customizable label, with provision to add typography and custom taps
+        A highly customizable label, which supports the typography, and also contains spport for recieving user interactions
         
-        * #### Initialization
-           DNALabel can be initialized with a specific [Typography]( link://typography) 
+        By using typography defining a heading label can be as easy as this :
+        
+        ` let headerLabel = DNALabel(withType: .h1(.product), text: "Hello World")`
+        
+     * #### Initialization
+        DNALabel can be initialized with a specific [Typography]( link://typography) 
             
-            ```swift
+         ```swift
         
                 /**
                 Initialize a DNALabel
@@ -247,58 +230,67 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
                 - parameter text: text string for the label
                 */
                 init(withType type: Typography, text: String?)
-             ```
+          ```
         
-            ```swift
+         ```swift
                 /**
                 Initialize text without typography
                 */
                 init() 
                 
-            ```
+          ```
         
-        * #### Properties
+     * #### Properties
          
-            * **textColor**: `UIColor` 
-                tint color of the text
+      * **textColor**: `UIColor` 
+        tint color of the text
                 
-            * **customAttributedText** : `DNAAttributedString`
-            * **type**: `Typography`
+      * **customAttributedText** : `DNAAttributedString
+      * **type**: `Typography`
             
-        * #### Methods
+   * #### Supporting User Interactions
+      To add and handle user tap events, implement the following method.
         
-            ```swift
-            typealias Action = (DNALabel) -> Void
-            public func action(_ closure: @escaping Action)
-            ```
+    ```swift
+    typealias Action = (DNALabel) -> Void
+    public func action(_ closure: @escaping Action)
+    ```
             
     * ### DNANumericLabel
-        A subclass of `DNALabel` for handling and processing  numeric values. It takes a Double value as params and displays a processed value based on the numberType Specified. Number type defines what kind of value the number is for eg. A number can be a percentage or an amount
+        A subclass of `DNALabel` for handling and processing special types of numeric values; these include amount, percentages, differences and signed numbers
+       
+        It takes a Double value as params and displays a processed value based on the numberType Specified.
+        Number type defines what kind of value the number is for eg. A number can be a percentage or an amount
         
         
-        * #### Initialization
-            Initialized with a number type which determines how to process the number value
+     * #### Initialization
+       
+       Initialized with a number type which determines how to process the number value
         
             ```swift
 
             public init(withNumberType numType: DNANumberType)
             ```
         
-        * #### Properties
+      * #### Properties
         
-        * **value** :  `Double`
+     * **value** :  `Double`
             number value to be displayed
-            
-        * **numberType** : ` DNANumberType`
            
-           the number value can be of one of the following types.
+     * **numberType** : ` DNANumberType`
+           
+        the number value can be of one of the following types.
+        The numbers can be signed, that is showing + / - signs for respective values
+            
+        > To have different colors for positive and negitive values provide
+        `Color.colored` value for color variable
 
            
-            ```swift
-             public enum DNANumberType {
+         ```swift
+            public enum DNANumberType {
              /**
               Percentage: Appends % sign at the end of the value
-              - color :
+             - color: option to show positive / negetive values in different colors
               - font : font for the number labbel
               - signed : if true appends + / - sign before number value
               */
@@ -340,7 +332,7 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
                     
                 }
              
-            ```
+          ```
 
 
 3. ### Text Inputs
@@ -348,19 +340,19 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
     1. #### DNATextField
         A  stateful textfield with rule based validation. 
         
-        * #### Validation 
+      * #### Validation 
             The text field input can be validated by adding validation rules. 
             A validation rule describes what type of input to accept.
     
             
-            Each [rule type](link://textValidationRuleType) has a [TextValidationRule](link://validation) and  an error object associated with it . If the rules provided are evaluated are not satisfied, the textField's input state enters errored state, and associated error message is displayed.
+           Each [rule type](link://textValidationRuleType) has a [TextValidationRule](link://validation) and  an error object associated with it . If the rules provided are evaluated are not satisfied, the textField's input state enters errored state, and associated error message is displayed.
             
             
-            You can provided multiple rules, if there are confilcting rules conditions, then precedence will be given on the basis of  whichever rule is added first in the array.
+           You can provided multiple rules, if there are confilcting rules conditions, then precedence will be given on the basis of  whichever rule is added first in the array.
             
-            **TextValidationRule**
+           **TextValidationRule**
            
-           ```
+          ```
             public enum TextValidationRule {
                 
                 case noRestriction
@@ -397,26 +389,21 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
                 
             }
             
-            ```   
+          ```   
     
-        * #### Properties 
-        
-            DNATextfield is a subclass of `UITextField` , hence all the properties of UITextField are applicable, along with some extra properties. 
+      * #### Properties 
+      
+          DNATextfield is a subclass of `UITextField` , hence all the properties of UITextField are applicable, along with some extra properties. 
             * **borderColor** : `UIColor`
                 border color for the text feild
-                
-                * **typography**: `Typography`
+             * **typography**: `Typography`
                     to add custom attributes to the text 
-                
-            * **inputState** :  `DNATextInputState`
-                
-                * *normal* : When no text is inputed
-                * *disabled*  :  Input will be in de-activated state
-                * *error* :  If input is incorrect (based on rules provided)
-                * *focused*  : While the text is being entered, the text feild is in foceused state.
-                
-                
-            * **validationRules** : `TextValidationRuleType`
+             * **inputState** :  `DNATextInputState`
+             * **normal** : When no text is inputed
+             * **disabled**  :  Input will be in de-activated state
+             * **error** :  If input is incorrect (based on rules provided)
+             * **focused**  : While the text is being entered, the text feild is in foceused state.
+             * **validationRules** : `TextValidationRuleType`
                 Input text can be validated by adding text validation rule type.
                 TextValidationRuleType has a [rule]() and an error object associated with it.
             
@@ -440,7 +427,7 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
                 
                  ```` 
                 
-            * **validationDelegate** : `DNATextInputDelegate`
+    * **validationDelegate** : `DNATextInputDelegate`
             
                 To be notified about the status of input text validation, conform to the validationDelegate.
             
@@ -453,7 +440,7 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
                 ```` 
             
             
-            *  **error**: `ValidationError`
+     *  **error**: `ValidationError`
             
                  Possible error states for text input
                  
@@ -482,13 +469,13 @@ Atoms are the basic building blocks of matter, the atoms of our interfaces serve
     > The process of adding validations to a text view is similar to that in DNATextField
     
     * #### Properties 
-        * **typography** :  `Typography`
-        * **placeholderText** : `String`
-        * **inputState** :  `DNATextInputState`
-        * **borderColor** :  `UIColor`
-        * **validationRules** : `[TextValidationRuleType]`
-        * **validationDelegate** :  `DNATextInputDelegate?`
-        * **error** : `ValidationError?`
+     * **typography** :  `Typography`
+     * **placeholderText** : `String`
+     * **inputState** :  `DNATextInputState
+     * **borderColor** :  `UIColor`
+     * **validationRules** : `[TextValidationRuleType]`
+     * **validationDelegate** :  `DNATextInputDelegate?`
+     * **error** : `ValidationError?`
     
 
 ## Molecules

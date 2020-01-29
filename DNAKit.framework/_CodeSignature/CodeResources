@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		cCkd2cO3l0qwGPHa7UB+Fj9PsEQ=
+		BHprrlah/P7hJtZFmRgd4QBvpg8=
 		</data>
 		<key>DNAKit.png</key>
 		<data>
@@ -44,9 +44,13 @@
 		<data>
 		mEq5tY9VErJRd1AIxPhqKZD3v8M=
 		</data>
+		<key>NamedLogo.png</key>
+		<data>
+		qW6idbplSh6ogl8ccK6P+t3tw0E=
+		</data>
 		<key>README.md</key>
 		<data>
-		fwiz9LIJpjUVbUSVTppf92/pOZw=
+		YC0kEb4KxW4x2/4+9VKGfjR+jtc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,7 +59,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cIwfecfGBi3LvDeUWlfGBHPh7AQBdx+rd1z1RTOrYKU=
+			BFNEVu1ZFJTTfKO2e3vxOuLmsd/zkSje5bgBs4hF7XM=
 			</data>
 		</dict>
 		<key>DNAKit.png</key>
@@ -114,11 +118,18 @@
 			YN5lKM14d+HNe09uj0DS9ivJYhc7iq0bJt3oCm8mjq4=
 			</data>
 		</dict>
+		<key>NamedLogo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/LaIMS156pLJEswsGXkGG5N33G90qIAUj5KOdEhFBbo=
+			</data>
+		</dict>
 		<key>README.md</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ikCRyO2Ui7GwwvSv21IkxfwGKg3DBmMPsx5ITxy9GKg=
+			BKAQse2jsyXep56drfdotdDF3s2hqmn4AB1v1h2zxlI=
 			</data>
 		</dict>
 	</dict>
