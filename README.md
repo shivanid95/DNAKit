@@ -57,6 +57,9 @@ Alternatively to give it a test run, run the command:
 
 
 # Usage
+
+Please refer the [Sample Project](https://github.com/shivanid95/DNAKitConsumer) for examples and detailed usage information.
+
 **How to use ?**
 
 * This library can be used as is or as a template to build a pattern library around your own design system.
