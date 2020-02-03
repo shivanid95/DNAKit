@@ -92,6 +92,14 @@ public class DNALabel: UILabel, Tappable {
         super.init(frame: .zero)
         self.text = nil
         self.translatesAutoresizingMaskIntoConstraints = false
+        
+        var a: String  = "A"
+        var b: String! = "B"
+        var c: String? = "C"
+        b = nil
+        a = b
+        c = b
+        b = a
     }
     
     required public init?(coder aDecoder: NSCoder) {
