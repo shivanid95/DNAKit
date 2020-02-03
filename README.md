@@ -33,7 +33,12 @@ A UI component library written in swift, inspired by [Atomic Design by Brad Fros
 # Installation
 
 ## Carthage
+To install via carthage add following in your project's `Cartfile`
+Check out [the official carthage documentation](https://github.com/Carthage/Carthage) to know more.
 
+```
+git "shivanid95/DNAKit" "master"
+```
 ## Cocoapods
 
 To install via cocoapods add `pod 'DNAKit', '~> 0.0.1' `similar to the following to your Podfile:
@@ -49,9 +54,6 @@ Then run a pod install inside your terminal, or from CocoaPods.app.
 Alternatively to give it a test run, run the command:
 
  `pod try DNAKit`
-
-
-## Manual
 
 
 # Usage
